@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: black;
+  }
+  .mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: white;
+  }
+  .mobile h1 {
+    font-size: 2.3em;
+    color: red;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 6px darkred;
+    -webkit-animation: mobileLegend 0.7s ease-in-out infinite;
+            animation: mobileLegend 0.7s ease-in-out infinite;
+  }
+  main {
+    display: none;
+  }
+}
+@-webkit-keyframes mobileLegend {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mobileLegend {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.container {
+  display: none;
+}
+
+@media screen and (min-width: 483px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: blueviolet;
+  }
+  .container {
+    display: block;
+    width: 90%;
+    height: 90%;
+    position: relative;
+  }
+  /* Texto */
+  h1 {
+    font-size: 45px;
+    color: white;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    font-family: "Poppins", sans-serif;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    position: fixed;
+    color: white;
+    margin: 10px;
+    bottom: 0%;
+    right: 0%;
+  }
+  /* Botões */
+  button {
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+  }
+  button:not(#no-button) {
+    position: fixed;
+    font-family: "Poppins", sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #no-button {
+    position: relative;
+    background-color: white;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Coração */
+  img {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .amor h5 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+  }
+}
+.inovate {
+  font-size: 35px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=main.css.map */

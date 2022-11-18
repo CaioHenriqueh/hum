@@ -1,0 +1,56 @@
+@import "mobile";
+@import "variaveis";
+@import "reset";
+@import "fonts";
+@media screen and (min-width:483px) {
+    
+    body {
+        background: #f0f0f0b2;
+        text-align: center;
+        height: 180vh;
+    }
+    .amor { 
+        text-align: center;
+        margin-top: 40px;
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 0px 0px 10px $purple;
+    
+        }
+        p {
+            font-size: 1.7rem;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.5;
+            width: 96%;
+            height: auto;
+            margin: 15px auto;
+            letter-spacing: 1.6px;
+     
+        }
+    }
+    .enviaparabtn {
+     
+        margin-top: 40px;
+        button {
+            width: 400px;
+            padding: 5px;
+            background: $dark2;  
+            font-size: 20px;  
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 1.5px;
+            transition: .3s;
+             &:hover {
+                transform: scale(1.1);
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
