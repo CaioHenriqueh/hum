@@ -50,8 +50,8 @@ noButton.addEventListener("pointermove", () => {
 
 function alterandoPosicao(elemento, height, width){
 
-  let heightRandom = (Math.random() * (height - 0)).toFixed(0) + "px"
-  let widthRandom = (Math.random() * ((width - 60) - 0)).toFixed(0) + "px"
+  let heightRandom = (Math.random() * (height - 0)).toFixed(0) + "px";
+  let widthRandom = (Math.random() * ((width - 60) - 0)).toFixed(0) + "px";
 
   if (bntX >= 0 && bntX <= containerWidth && bntY >= 0 && bntY <= containerHeight){
 
