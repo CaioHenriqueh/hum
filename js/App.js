@@ -4,6 +4,7 @@ const yesButton = document.getElementById("yes-button")
 const text = document.querySelector(".pedido");
 const img = document.querySelector(".img")
 
+
 // Posição do botão
 let bntX = parseInt(getComputedStyle(noButton).left)
 let bntY = parseInt(getComputedStyle(noButton).top)
@@ -66,3 +67,4 @@ function alterandoPosicao(elemento, height, width){
   }
 
 }
+
